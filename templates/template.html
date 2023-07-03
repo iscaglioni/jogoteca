@@ -20,7 +20,7 @@
         <h1>{{ titulo }}</h1>
       </div>
       <!-- Criado ivanzito -->
-      <form action="/logout" method="post">
+      <form action="{{url_for("logout")}}" method="post">
         <button class="btn btn-secondary" type="submit">Logout</button>
       </form>
       {% block conteudo %} {% endblock %}
